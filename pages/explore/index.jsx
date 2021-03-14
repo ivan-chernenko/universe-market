@@ -1,4 +1,4 @@
-import {ExploreContainer, Header, PlanetLine} from "./styles";
+import {ExploreContainer, Header, PlanetLine} from "../../styles/explore-page.styles";
 import {Planet} from "../../components/planet";
 
 const Index = () => {

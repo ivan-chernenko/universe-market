@@ -1,5 +1,5 @@
 import styled, {keyframes} from "styled-components";
-import {StyledButtonLink} from "../../components/link";
+import {StyledButtonLink} from "../components/link";
 
 const rotate = keyframes`
   from {
