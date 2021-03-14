@@ -1,8 +1,7 @@
 import {GalaxyImage, StartedPageContainer} from './styles';
 import {ButtonLink} from "../../components/link";
 
-
-export const StartedPage = () => {
+const StartedPage = () => {
     return <StartedPageContainer>
         <GalaxyImage
             src='/galaxy.png'
@@ -10,3 +9,5 @@ export const StartedPage = () => {
         <ButtonLink href='/explore' title='Start explore'/>
     </StartedPageContainer>
 };
+
+export default StartedPage;

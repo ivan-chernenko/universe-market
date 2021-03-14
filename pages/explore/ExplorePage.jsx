@@ -1,7 +1,7 @@
 import {ExploreContainer, Header, PlanetLine} from "./styles";
 import {Planet} from "../../components/planet";
 
-export const ExplorePage = () => {
+const ExplorePage = () => {
     return <ExploreContainer>
         <Header>
             QUARTER 1 and 2, 2021
@@ -43,3 +43,5 @@ export const ExplorePage = () => {
         </PlanetLine>
     </ExploreContainer>;
 };
+
+export default ExplorePage;
