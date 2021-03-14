@@ -95,7 +95,7 @@ export const PlanetMask = styled.div`
 
 export const PlanetBackground = styled.div`
   animation: ${translateBackground} 40s infinite linear;
-  background: url(http://artem.anmedio.ru/dev/planet/mars.jpg) repeat-x;
+  background: url(/mars.jpg) repeat-x;
   width: 150px;
   height: 150px;
   position: absolute;
@@ -103,7 +103,7 @@ export const PlanetBackground = styled.div`
 `;
 
 export const PlanetClouds = styled.div`
-  background: url(http://artem.anmedio.ru/dev/planet/clouds.png) repeat-x;
+  background: url(/clouds.png) repeat-x;
   width: 150px;
   height: 150px;
   position: absolute;
