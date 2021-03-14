@@ -1,7 +1,7 @@
 import {ExploreContainer, Header, PlanetLine} from "./styles";
 import {Planet} from "../../components/planet";
 
-const ExplorePage = () => {
+const Index = () => {
     return <ExploreContainer>
         <Header>
             QUARTER 1 and 2, 2021
@@ -44,4 +44,4 @@ const ExplorePage = () => {
     </ExploreContainer>;
 };
 
-export default ExplorePage;
+export default Index;
