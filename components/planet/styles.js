@@ -95,7 +95,7 @@ export const PlanetMask = styled.div`
 
 export const PlanetBackground = styled.div`
   animation: ${translateBackground} 40s infinite linear;
-  background: url(/mars.jpg) repeat-x;
+  background: url(/mars.jpeg) repeat-x;
   width: 150px;
   height: 150px;
   position: absolute;
