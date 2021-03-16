@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import Link from "next/link";
 
-export const StyledButtonLink = styled.a`
+export const Button = styled.button`
   box-sizing: border-box;
   text-decoration: none;
   width: 258px;
@@ -15,10 +14,22 @@ export const StyledButtonLink = styled.a`
   font-size: 24px;
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  
+  &:focus {
+    outline: none;
+  }
 `;
 
-export const ButtonLink = ({href, title}) => <Link href={href}>
-    <StyledButtonLink prefetch href={href}>
-        {title}
-    </StyledButtonLink>
-</Link>;
+export const RocketButton = styled.button`
+  border: none;
+  width: 100px;
+  height: 100px;
+  background: bisque;
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+  
+  &:focus {
+    outline: none;
+  }
+`;

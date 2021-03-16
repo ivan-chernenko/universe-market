@@ -1,5 +1,6 @@
-import styled, {keyframes} from "styled-components";
-import {StyledButtonLink} from "../components/link";
+import styled, {keyframes, css} from "styled-components";
+import {Button} from "../button";
+import {animationTimeouts} from "../../common/constants";
 
 const rotate = keyframes`
   from {
@@ -11,13 +12,26 @@ const rotate = keyframes`
   }
 `;
 
+const disappear = keyframes`
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+`;
+
 export const StartedPageContainer = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
+  position: absolute;
   justify-content: center;
+  background-size: 100vh;
+  background: rgba(0,0,0,0);
+  ${({status}) => status === 'exiting' ? css`animation: ${disappear} ${animationTimeouts.disappear}ms linear;` : ''}
   
-  ${StyledButtonLink} {
+  ${Button} {
     margin-top: 70vh;
     z-index: 100;
   }

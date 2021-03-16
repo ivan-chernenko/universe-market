@@ -1,1 +1,1 @@
-export {Planet} from './Planet';
+export {PlanetWithLines, Planet} from './Planet';

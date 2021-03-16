@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
       background-image: url('/back-ground.png');
       background-size: 100vh;
       overflow: hidden;
+      height: 100vh;
     }
     
     html {
