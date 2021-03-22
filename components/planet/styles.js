@@ -149,5 +149,5 @@ export const PlanetClouds = styled.div`
   border-radius: 50%;
   animation: ${translateBackground} 30s infinite linear;
   animation-delay: ${animationTimeouts.disappear}ms;
-  opacity: 0.8;
+  opacity: 1;
 `;

@@ -54,6 +54,6 @@ export const GalaxyImage = styled.img`
   position: absolute;
   animation: ${pulse} 2s linear infinite;
   left: calc(50% - 450px);
-  top: calc(50% - 450px);
+  top: calc(50% - 350px);
   z-index: 10;
 `;
