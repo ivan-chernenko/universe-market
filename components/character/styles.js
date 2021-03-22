@@ -5,8 +5,8 @@ import {animationTimeouts} from "../../common/constants";
 export const CharacterAvatar = styled.div`
   background: url(${props => props.avatar}) no-repeat;
   background-size: contain;
-  height: 300px;
-  width: 300px;
+  height: 270px;
+  width: 270px;
   transition: all 0.4s ease-in-out;
 
   &:hover {
@@ -23,7 +23,7 @@ export const CharacterContainer = styled.div`
 
 export const CharacterText = styled.div`
   color: rgb(200,200,200);
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   margin-top: 24px;
   opacity: 0;

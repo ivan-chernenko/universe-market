@@ -4,17 +4,24 @@ import {shake} from "../../common/animations";
 export const Button = styled.button`
   box-sizing: border-box;
   text-decoration: none;
-  width: 258px;
-  height: 52px;
+  width: 278px;
+  height: 58px;
   text-align: center;
   line-height: 52px;
-  color: #C8C8C8;
-  border: 1px solid #C8C8C8;
-  box-shadow: 0 0 20px #C8C8C8;
+  color: rgb(249 0 255);
+  border: 1px solid rgb(249 0 255);
+  box-shadow: 0 0 20px rgb(249 0 255);
   border-radius: 5px;
   font-size: 24px;
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+
+  @media(max-width: 600px) {
+    height: 40px;
+    width: 200px;
+    line-height: 40px;
+    font-size: 18px;
+  }
   
   &:focus {
     outline: none;

@@ -19,13 +19,15 @@ const PlanetTexts = props => {
     </PlanetTextsContainer>
 };
 
-export const PlanetWithLines = ({texts, planetBackground}) => {
+export const PlanetWithLines = ({texts, planetBackground, opacity}) => {
     return <PlanetStyleWithLines>
         <PlanetTexts texts={texts}/>
         <PlanetBackground
             background={planetBackground}
         />
-        <PlanetClouds/>
+        <PlanetClouds
+            opacity={opacity}
+        />
         <PlanetMask/>
     </PlanetStyleWithLines>
 };

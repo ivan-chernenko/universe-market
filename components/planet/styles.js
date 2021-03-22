@@ -6,7 +6,7 @@ export const PlanetTextsContainer = styled.div`
   position: absolute;
   z-index: 10;
   color: rgb(200 200 200);
-  font-size: 18px;
+  font-size: 20px;
   width: 250px;
   left: 100px;
   opacity: 0;
@@ -149,5 +149,5 @@ export const PlanetClouds = styled.div`
   border-radius: 50%;
   animation: ${translateBackground} 30s infinite linear;
   animation-delay: ${animationTimeouts.disappear}ms;
-  opacity: 1;
+  opacity: ${props => props.opacity};
 `;

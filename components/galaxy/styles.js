@@ -50,10 +50,16 @@ export const StartedPageContainer = styled.div`
 `;
 
 export const GalaxyImage = styled.img`
-  width: 900px;
+  width: 800px;
   position: absolute;
   animation: ${pulse} 2s linear infinite;
-  left: calc(50% - 450px);
+  left: calc(50% - 400px);
   top: calc(50% - 350px);
   z-index: 10;
+
+  @media(max-width: 600px) {
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
+  }
 `;

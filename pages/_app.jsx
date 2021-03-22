@@ -1,7 +1,12 @@
 import {createGlobalStyle} from "styled-components";
 import {useEffect, useState} from "react";
+import Head from "next/head";
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    font-family: Futura;
+  }
+  
   body {
     margin: 0;
     background-image: url('/background.png');
@@ -54,6 +59,10 @@ function MyApp({Component, pageProps}) {
             .catch(err => console.log("Failed to load images", err))
     }, []);
     return <>
+        <Head>
+            <title>My page title</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        </Head>
         {
             imagesLoaded && <>
                 <GlobalStyle/>
