@@ -1,10 +1,9 @@
 import {
-    PlanetStyle,
     PlanetClouds,
     PlanetBackground,
     PlanetMask,
     PlanetTextsContainer,
-    PlanetStyleWithLines, PlanetTitle, PlanetContainer
+    PlanetStyleWithLines,
 } from './styles';
 
 
@@ -20,30 +19,13 @@ const PlanetTexts = props => {
     </PlanetTextsContainer>
 };
 
-export const PlanetWithLines = ({texts}) => {
+export const PlanetWithLines = ({texts, planetBackground}) => {
     return <PlanetStyleWithLines>
         <PlanetTexts texts={texts}/>
-        <PlanetBackground/>
+        <PlanetBackground
+            background={planetBackground}
+        />
         <PlanetClouds/>
         <PlanetMask/>
     </PlanetStyleWithLines>
-};
-
-export const Planet = ({title, onClick}) => {
-    return <PlanetContainer
-        onClick={() => {
-            if (onClick) {
-                onClick();
-            }
-        }}
-    >
-        <PlanetStyle>
-            <PlanetBackground/>
-            <PlanetClouds/>
-            <PlanetMask/>
-        </PlanetStyle>
-        <PlanetTitle>
-            {title}
-        </PlanetTitle>
-    </PlanetContainer>
 };

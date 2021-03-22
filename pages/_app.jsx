@@ -3,8 +3,9 @@ import {createGlobalStyle} from "styled-components";
 const GlobalStyle = createGlobalStyle`
     body {
       margin: 0;
-      background-image: url('/back-ground.png');
-      background-size: 100vh;
+      background-image: url('/background.png');
+      background-size: 100vw 100vh;
+      background-repeat: no-repeat;
       overflow: hidden;
       height: 100vh;
     }

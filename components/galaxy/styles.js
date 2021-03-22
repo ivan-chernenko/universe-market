@@ -2,13 +2,25 @@ import styled, {keyframes, css} from "styled-components";
 import {Button} from "../button";
 import {animationTimeouts} from "../../common/constants";
 
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
   }
 
-  to {
-    transform: rotate(360deg);
+  25% {
+    transform: scale(1.05);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+  
+  100% {
+    transform: scale(1);
   }
 `;
 
@@ -39,9 +51,8 @@ export const StartedPageContainer = styled.div`
 
 export const GalaxyImage = styled.img`
   width: 900px;
-  height: 900px;
   position: absolute;
-  animation: ${rotate} 60s linear infinite;
+  animation: ${pulse} 2s linear infinite;
   left: calc(50% - 450px);
   top: calc(50% - 450px);
   z-index: 10;

@@ -1,43 +1,6 @@
-import styled, {keyframes} from "styled-components";
+import styled from "styled-components";
 import {animationTimeouts} from "../../common/constants";
-
-const translateBackground = keyframes`
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: -600px;
-  }
-`;
-
-const appear = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const raiseLines = keyframes`
-  from {
-    height: 0;
-  }  
-  to {
-    height: 25vh;
-  }
-`;
-
-const raiseLinesTop = keyframes`
-  from {
-    height: 0;
-    top: 0;
-  }
-  to {
-    height: 25vh;
-    top: -25vh;
-  }
-`;
+import {appear, raiseLines, raiseLinesTop, translateBackground} from "../../common/animations";
 
 export const PlanetTextsContainer = styled.div`
   position: absolute;
@@ -48,22 +11,6 @@ export const PlanetTextsContainer = styled.div`
   left: 100px;
   opacity: 0;
   animation: ${appear} 400ms ease-in-out forwards;
-`;
-
-export const PlanetTitle = styled.div`
-  color: rgb(200,200,200);
-  font-size: 20px;
-  text-align: center;
-  margin-top: 24px;
-  opacity: 0;
-  animation: ${appear} ${animationTimeouts.disappear}ms linear;
-  animation-fill-mode: forwards;
-  animation-delay: ${animationTimeouts.disappear}ms;
-`;
-
-export const PlanetContainer = styled.div`
-    margin-top: 45px;
-    cursor: pointer;
 `;
 
 export const PlanetStyle = styled.div`
@@ -186,8 +133,9 @@ export const PlanetMask = styled.div`
 export const PlanetBackground = styled.div`
   animation: ${translateBackground} 40s infinite linear;
   animation-delay: ${animationTimeouts.disappear}ms;
-  background: url(/mars.jpeg) repeat-x;
+  background: url(${props => props.background}) repeat-x;
   width: 150px;
+  background-size: cover;
   height: 150px;
   position: absolute;
   border-radius: 50%;
@@ -201,5 +149,5 @@ export const PlanetClouds = styled.div`
   border-radius: 50%;
   animation: ${translateBackground} 30s infinite linear;
   animation-delay: ${animationTimeouts.disappear}ms;
-  opacity: 0.4;
+  opacity: 0.8;
 `;

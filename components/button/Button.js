@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {shake} from "../../common/animations";
 
 export const Button = styled.button`
   box-sizing: border-box;
@@ -22,12 +23,18 @@ export const Button = styled.button`
 
 export const RocketButton = styled.button`
   border: none;
-  width: 100px;
-  height: 100px;
-  background: bisque;
+  width: 50px;
+  height: 200px;
+  background: url("/rocket.png") no-repeat;
+  background-size: contain;
   position: absolute;
-  right: 30px;
+  right: 80px;
   bottom: 80px;
+  cursor: pointer;
+  
+  &:hover {
+    animation: ${shake} 150ms infinite ease-in-out;
+  }
   
   &:focus {
     outline: none;

@@ -28,6 +28,7 @@ export const RoadMap = ({state, setShownState}) => {
                             'Presale round',
                             'Community outreach',
                         ]}
+                        planetBackground='/milk-planet.jpg'
                     />
                     <PlanetWithLines
                         texts={[
@@ -36,23 +37,28 @@ export const RoadMap = ({state, setShownState}) => {
                             'First NFT cards drop',
                             'Listing on Uniswap',
                         ]}
+                        planetBackground='/galaxy-planet.jpg'
                     />
                     <PlanetWithLines
                         texts={[
                             'Layer 2 protocol implementation',
                             'Integration with different NFT project',
                         ]}
+                        planetBackground='/fire-planet.jpg'
+
                     />
                     <PlanetWithLines
                         texts={[
                             'Orbit NFT events',
                             'First NFT projects launch',
                         ]}
+                        planetBackground='/red-planet.jpeg'
                     />
                     <PlanetWithLines
                         texts={[
                             'TBA',
                         ]}
+                        planetBackground='/temperature-planet.jpg'
                     />
                 </PlanetLine>
                 <RocketButton

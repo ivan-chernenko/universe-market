@@ -1,23 +1,6 @@
-import styled, {keyframes, css} from 'styled-components';
+import styled, {css} from 'styled-components';
 import {animationTimeouts} from "../../common/constants";
-
-const appear = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const disappear = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-`;
+import {appear, disappear, lineGrow} from "../../common/animations";
 
 export const RoadMapContainer = styled.div`
   position: absolute;
@@ -39,16 +22,6 @@ export const RoadMapContainer = styled.div`
     }
     return ''
   }}
-`;
-
-const lineGrow = keyframes`
-  from {
-    width: 150px;
-  }
-
-  to {
-    width: 90%;
-  }
 `;
 
 export const PlanetLine = styled.div`

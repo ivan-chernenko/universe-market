@@ -15,7 +15,7 @@ export const Galaxy = ({setShownState, state}) => {
                 status={status}
             >
                 <GalaxyImage
-                    src='/galaxy.png'
+                    src='/logo.png'
                 />
                 <Button
                     onClick={() => setShownState(EXPLORE)}

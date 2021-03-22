@@ -1,23 +1,6 @@
-import styled, {css, keyframes} from "styled-components";
+import styled, {css} from "styled-components";
 import {animationTimeouts} from "../../common/constants";
-
-const appear = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const disappear = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-`;
+import {appear, disappear} from "../../common/animations";
 
 export const ExploreContainer = styled.div`
   width: 100vw;
@@ -37,11 +20,11 @@ export const ExploreContainer = styled.div`
   }}
 `;
 
-export const PlanetLine = styled.div`
+export const CharactersLine = styled.div`
   box-sizing: border-box;
   display: flex;
   position: relative;
-  padding: 0 150px;
+  padding: 0 15%;
   width: 100%;
   justify-content: space-between;
 `;
