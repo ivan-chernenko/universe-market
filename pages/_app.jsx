@@ -45,7 +45,6 @@ function MyApp({Component, pageProps}) {
                 const loadImg = new Image();
                 loadImg.src = image;
                 loadImg.onload = () => resolve(image);
-
                 loadImg.onerror = err => reject(err)
             })
         };

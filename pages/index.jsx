@@ -21,7 +21,7 @@ const Index = () => {
             setShownState={setShownState}
         />
         {
-            shownState !== GALAXY && <Footer/>
+            false && <Footer/>
         }
     </>
 
