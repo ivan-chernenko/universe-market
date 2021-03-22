@@ -44,7 +44,7 @@ export const StartedPageContainer = styled.div`
   ${({status}) => status === 'exiting' ? css`animation: ${disappear} ${animationTimeouts.disappear}ms linear;` : ''}
   
   ${Button} {
-    margin-top: 70vh;
+    margin-top: 80vh;
     z-index: 100;
   }
 `;

@@ -44,10 +44,7 @@ function MyApp({Component, pageProps}) {
             return new Promise((resolve, reject) => {
                 const loadImg = new Image();
                 loadImg.src = image;
-                loadImg.onload = () =>
-                    setTimeout(() => {
-                        resolve(image)
-                    }, 200);
+                loadImg.onload = () => resolve(image);
 
                 loadImg.onerror = err => reject(err)
             })
