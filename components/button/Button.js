@@ -39,6 +39,13 @@ export const RocketButton = styled.button`
   bottom: 80px;
   cursor: pointer;
   
+  @media(max-width: 600px) {
+    width: 25px;
+    height: 100px;
+    right: 20px;
+    bottom: 20px;
+  }
+  
   &:hover {
     animation: ${shake} 150ms infinite ease-in-out;
   }

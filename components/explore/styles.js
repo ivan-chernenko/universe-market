@@ -21,6 +21,12 @@ export const ExploreContainer = styled.div`
 `;
 
 export const CharactersLine = styled.div`
+  @media(max-width: 600px) {
+    flex-direction: column;
+    padding: 0 5%;
+    margin-bottom: 100px;
+  }
+  
   box-sizing: border-box;
   display: flex;
   position: relative;
