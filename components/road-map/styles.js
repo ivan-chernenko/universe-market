@@ -10,6 +10,7 @@ export const RoadMapContainer = styled.div`
   align-items: center;
   background-size: 100vh;
   background: rgba(0,0,0,0);
+  
   ${({status}) => {
     if (status === 'entering') {
       return css`
@@ -44,6 +45,19 @@ export const PlanetLine = styled.div`
     box-shadow: rgb(200 200 200) 0 0 20px;
     content: "";
   }
+
+  @media(max-width: 600px) {
+    flex-direction: column;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    justify-content: unset;
+    
+    &:before {
+      height: 0;
+      width: 0;
+    }
+  }
 `;
 
 export const Header = styled.h1`
@@ -52,4 +66,10 @@ export const Header = styled.h1`
   font-size: 24px;
   left: 120px;
   top: 25px;
+  
+  @media(max-width: 600px) {
+    font-size: 18px;
+    left: 56px;
+    top: 8px;
+  }
 `;

@@ -11,6 +11,14 @@ export const PlanetTextsContainer = styled.div`
   left: 100px;
   opacity: 0;
   animation: ${appear} 400ms ease-in-out forwards;
+
+  @media(max-width: 600px) {
+    width: 150px;
+    font-size: 16px;
+    > p {
+      margin: 4px;
+    }
+  }
 `;
 
 export const PlanetStyle = styled.div`
@@ -19,6 +27,13 @@ export const PlanetStyle = styled.div`
   border-radius: 50%;
   position: relative;
   z-index: 10;
+  @media(max-width: 600px) {
+    height: 75px;
+    width: 75px;
+    min-width: 75px;
+    min-height: 75px;
+    margin-bottom: 100px;
+  }
 `;
 
 export const PlanetStyleWithLines = styled(PlanetStyle)`
@@ -118,6 +133,42 @@ export const PlanetStyleWithLines = styled(PlanetStyle)`
   &:nth-child(odd) ${PlanetTextsContainer} {
     top: -25vh;
   }
+
+  @media(max-width: 600px) {
+    flex-direction: column;
+    :nth-child(even):before {
+      height: 0;
+      width: 0;
+      animation: none;
+    }
+
+    :nth-child(odd):before {
+      height: 0;
+      width: 0;
+      animation: none;
+    }
+
+    :nth-child(even):after {
+      height: 0;
+      width: 0;
+      animation: none;
+    }
+
+    :nth-child(odd):after {
+      height: 0;
+      width: 0;
+      animation: none;
+    }
+
+    &:nth-child(even) ${PlanetTextsContainer} {
+      top: 0;
+      transform: unset;
+    }
+
+    &:nth-child(odd) ${PlanetTextsContainer} {
+      top: 0;
+    }
+  }
 `;
 
 
@@ -139,6 +190,12 @@ export const PlanetBackground = styled.div`
   height: 150px;
   position: absolute;
   border-radius: 50%;
+  @media(max-width: 600px) {
+    min-width: 75px;
+    min-height: 75px;
+    height: 75px;
+    width: 75px;
+  }
 `;
 
 export const PlanetClouds = styled.div`
@@ -150,4 +207,10 @@ export const PlanetClouds = styled.div`
   animation: ${translateBackground} 30s infinite linear;
   animation-delay: ${animationTimeouts.disappear}ms;
   opacity: ${props => props.opacity};
+  @media(max-width: 600px) {
+    height: 75px;
+    width: 75px;
+    min-width: 75px;
+    min-height: 75px;
+  }
 `;
