@@ -13,10 +13,10 @@ export const PlanetTextsContainer = styled.div`
   animation: ${appear} 400ms ease-in-out forwards;
 
   @media(max-width: 600px) {
-    width: 150px;
+    width: 180px;
     font-size: 16px;
     > p {
-      margin: 4px;
+      margin: 4px 0;
     }
   }
 `;
