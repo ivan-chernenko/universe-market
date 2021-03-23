@@ -57,6 +57,12 @@ export const GalaxyImage = styled.img`
   top: calc(50% - 350px);
   z-index: 10;
 
+  @media(max-width: 900px) {
+    width: 500px;
+    left: calc(50% - 250px);
+    top: calc(50% - 250px);
+  }
+
   @media(max-width: 600px) {
     width: 300px;
     left: calc(50% - 150px);

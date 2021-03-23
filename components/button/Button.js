@@ -16,7 +16,7 @@ export const Button = styled.button`
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 
-  @media(max-width: 600px) {
+  @media(max-width: 1024px) {
     height: 40px;
     width: 200px;
     line-height: 40px;
@@ -40,6 +40,13 @@ export const RocketButton = styled.button`
   cursor: pointer;
   
   @media(max-width: 600px) {
+    width: 25px;
+    height: 100px;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  @media(max-height: 800px) {
     width: 25px;
     height: 100px;
     right: 20px;

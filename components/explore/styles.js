@@ -21,7 +21,7 @@ export const ExploreContainer = styled.div`
 `;
 
 export const CharactersLine = styled.div`
-  @media(max-width: 600px) {
+  @media(max-width: 1024px) {
     flex-direction: column;
     padding: 0 5%;
     margin-bottom: 100px;

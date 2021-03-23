@@ -8,11 +8,24 @@ export const CharacterAvatar = styled.div`
   height: 270px;
   width: 270px;
   transition: all 0.4s ease-in-out;
+  
+  @media(max-width: 1200px) {
+    height: 200px;
+    width: 200px;
+  }
+  
+  @media(max-width: 1024px) {
+    margin: 0 20px;
+  }
 
   @media(max-width: 600px) {
     height: 150px;
     width: 150px;
-    margin: 0 20px;
+  }
+
+  @media(max-height: 800px) {
+    height: 150px;
+    width: 150px;
   }
 
   &:hover {
@@ -26,7 +39,7 @@ export const CharacterContainer = styled.div`
   margin-top: 45px;
   cursor: pointer;
 
-  @media(max-width: 600px) {
+  @media(max-width: 1024px) {
     display: flex;
     
     :nth-child(even) {
@@ -36,7 +49,7 @@ export const CharacterContainer = styled.div`
 `;
 
 export const CharacterText = styled.div`
-  @media(max-width: 600px) {
+  @media(max-width: 1024px) {
     font-size: 18px;
     display: flex;
     align-items: center;

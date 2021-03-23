@@ -46,7 +46,8 @@ export const PlanetLine = styled.div`
     content: "";
   }
 
-  @media(max-width: 600px) {
+  @media(max-width: 1024px) {
+    padding: 0 20%;
     flex-direction: column;
     margin-top: 80px;
     height: calc(100vh - 80px);
@@ -58,6 +59,10 @@ export const PlanetLine = styled.div`
       width: 0;
     }
   }
+
+  @media(max-width: 600px) {
+    padding: 0 50px;
+  }
 `;
 
 export const Header = styled.h1`
@@ -67,7 +72,7 @@ export const Header = styled.h1`
   left: 120px;
   top: 25px;
   
-  @media(max-width: 600px) {
+  @media(max-width: 1024px) {
     font-size: 18px;
     left: 56px;
     top: 8px;
