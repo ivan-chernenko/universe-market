@@ -60,7 +60,7 @@ function MyApp({Component, pageProps}) {
     }, []);
     return <>
         <Head>
-            <title>My page title</title>
+            <title>Orbitlabs</title>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
         </Head>
         {
