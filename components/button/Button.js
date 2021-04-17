@@ -15,6 +15,9 @@ export const Button = styled.button`
   font-size: 24px;
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media(max-width: 1024px) {
     height: 40px;
@@ -28,6 +31,23 @@ export const Button = styled.button`
   }
 `;
 
+export const Timer = styled.div`
+  position: absolute;
+  right: 60px;
+  bottom: 70px;
+  color: white;
+
+  @media(max-width: 600px) {
+    right: 25px;
+    bottom: 20px;
+  }
+
+  @media(max-height: 800px) {
+    right: 25px;
+    bottom: 20px;
+  }
+`;
+
 export const RocketButton = styled.button`
   border: none;
   width: 50px;
@@ -38,7 +58,8 @@ export const RocketButton = styled.button`
   right: 80px;
   bottom: 80px;
   cursor: pointer;
-  
+  animation: ${shake} 150ms infinite ease-in-out;
+
   @media(max-width: 600px) {
     width: 25px;
     height: 100px;
@@ -53,9 +74,6 @@ export const RocketButton = styled.button`
     bottom: 20px;
   }
   
-  &:hover {
-    animation: ${shake} 150ms infinite ease-in-out;
-  }
   
   &:focus {
     outline: none;

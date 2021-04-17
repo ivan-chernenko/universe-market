@@ -2,6 +2,16 @@ import styled, {css} from "styled-components";
 import {animationTimeouts} from "../../common/constants";
 import {appear, disappear} from "../../common/animations";
 
+export const ButtonsContainer = styled.div`
+  position: absolute;
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  top: 40px;
+  padding: 0 20px;
+`;
+
 export const ExploreContainer = styled.div`
   width: 100vw;
   height: 100vh;

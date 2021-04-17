@@ -1,15 +1,21 @@
-import {ExploreContainer, CharactersLine} from "./styles";
+import {ExploreContainer, CharactersLine, ButtonsContainer} from "./styles";
 import {EXPLORE, ROAD_MAP} from "../../common";
 import {Transition} from "react-transition-group";
 import {animationTimeouts} from "../../common/constants";
-import {RocketButton} from "../button";
 import {Character} from "../character/Character";
+import {RocketButtonC} from "../button/rocket-button";
+import {TelegramLink} from "../telegram";
+import {WhitePaperLink} from "../white-paper";
+import {Button} from "../button";
 
 const characters = [
     {
         common: '/gangsta.png',
         hovered: '/gangsta-hovered.png',
-        text: 'Marketplace'
+        text: 'Marketplace',
+        onClick: () => {
+            window.location.href = '/market';
+        }
     },
     {
         common: '/smoker.png',
@@ -34,20 +40,32 @@ export const Explore = ({state, setShownState}) => {
             (status) => <ExploreContainer
                 status={status}
             >
+                <ButtonsContainer>
+                    <Button
+                        onClick={() => setShownState(ROAD_MAP)}
+                    >
+                        Roadmap
+                    </Button>
+                    <Button>
+                        Become a partner
+                    </Button>
+                </ButtonsContainer>
                 <CharactersLine>
                     {
                         characters.map(character => <Character
                             avatar={character.common}
                             hoveredAvatar={character.hovered}
-                            onClick={() => {}}
+                            onClick={character.onClick}
                             text={character.text}
                             key={character.common}
                         />)
                     }
                 </CharactersLine>
-                <RocketButton
-                    onClick={() => setShownState(ROAD_MAP)}
+                <RocketButtonC
+                    onClick={() => {}}
                 />
+                <TelegramLink/>
+                <WhitePaperLink/>
             </ExploreContainer>
         }
     </Transition>

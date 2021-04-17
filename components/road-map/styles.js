@@ -65,6 +65,29 @@ export const PlanetLine = styled.div`
   }
 `;
 
+export const Back = styled.button`
+  position: absolute;
+  left: 67px;
+  top: 35px;
+  height: 45px;
+  width: 30px;
+  border: none;
+  background: url(/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
+  }
+  
+  @media(max-width: 1024px) {
+    font-size: 18px;
+    left: 18px;
+    top: 8px;
+  }
+`;
+
 export const Header = styled.h1`
   position: absolute;
   color: rgb(200, 200, 200);

@@ -1,9 +1,10 @@
-import {RoadMapContainer, Header, PlanetLine} from "./styles";
+import {RoadMapContainer, Header, PlanetLine, Back} from "./styles";
 import {PlanetWithLines} from "../planet";
 import {EXPLORE, ROAD_MAP} from "../../common";
 import {Transition} from "react-transition-group";
 import {animationTimeouts} from "../../common/constants";
 import {RocketButton} from "../button";
+import {RocketButtonC} from "../button/rocket-button";
 
 export const RoadMap = ({state, setShownState}) => {
     return <Transition
@@ -17,6 +18,9 @@ export const RoadMap = ({state, setShownState}) => {
             (status) => <RoadMapContainer
                 status={status}
             >
+                <Back
+                    onClick={() => setShownState(EXPLORE)}
+                />
                 <Header>
                     QUARTER 1 and 2, 2021
                 </Header>
@@ -65,8 +69,8 @@ export const RoadMap = ({state, setShownState}) => {
                         opacity={0.8}
                     />
                 </PlanetLine>
-                <RocketButton
-                    onClick={() => setShownState(EXPLORE)}
+                <RocketButtonC
+                    onClick={() => {}}
                 />
             </RoadMapContainer>
         }
