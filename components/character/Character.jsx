@@ -13,7 +13,7 @@ export const Character = ({avatar, hoveredAvatar, text, onClick, href}) => {
                 avatar={avatar}
             />
             <CharacterText>
-                {text}x
+                {text}
             </CharacterText>
         </CharacterContainer>
     </Link>
