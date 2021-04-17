@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 80"
+    "start": "next start -p 443"
   },
   "dependencies": {
     "next": "10.0.8",
