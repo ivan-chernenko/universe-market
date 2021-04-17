@@ -13,19 +13,19 @@ const characters = [
         common: '/gangsta.png',
         hovered: '/gangsta-hovered.png',
         text: 'Marketplace',
-        onClick: () => {
-            window.location.href = '/market';
-        }
+        href: '/market',
     },
     {
         common: '/smoker.png',
         hovered: '/smoker-hovered.png',
         text: 'NFT drops',
+        href: '/',
     },
     {
         common: '/football-fan.png',
         hovered: '/football-fan-hovered.png',
         text: 'NFT tokens',
+        href: '/',
     },
 ];
 
@@ -57,9 +57,9 @@ export const Explore = ({state, setShownState}) => {
                         characters.map(character => <Character
                             avatar={character.common}
                             hoveredAvatar={character.hovered}
-                            onClick={character.onClick}
                             text={character.text}
                             key={character.common}
+                            href={character.href}
                         />)
                     }
                 </CharactersLine>

@@ -29,6 +29,7 @@ const IMAGES = [
     '/milk-planet.jpg',
     '/raper.png',
     '/smoker.png',
+    '/market.png',
     '/smoker-hovered.png',
     '/football-fan.png',
     '/football-fan-hovered.png',
