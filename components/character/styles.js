@@ -18,14 +18,14 @@ export const CharacterAvatar = styled.div`
     margin: 0 20px;
   }
 
-  @media(max-width: 600px) {
+  @media(max-height: 800px) {
     height: 150px;
     width: 150px;
   }
 
-  @media(max-height: 800px) {
-    height: 150px;
-    width: 150px;
+  @media(max-width: 600px) {
+    height: 100px;
+    width: 100px;
   }
 
   &:hover {

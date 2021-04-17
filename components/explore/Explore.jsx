@@ -46,7 +46,9 @@ export const Explore = ({state, setShownState}) => {
                     >
                         Roadmap
                     </Button>
-                    <Button>
+                    <Button
+                        margin={true}
+                    >
                         Become a partner
                     </Button>
                 </ButtonsContainer>

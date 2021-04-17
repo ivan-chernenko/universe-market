@@ -18,6 +18,7 @@ export const Button = styled.button`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: ${props => props.margin ? '8px' : 0};
 
   @media(max-width: 1024px) {
     height: 40px;
@@ -63,17 +64,9 @@ export const RocketButton = styled.button`
   @media(max-width: 600px) {
     width: 25px;
     height: 100px;
-    right: 20px;
-    bottom: 20px;
+    right: 25px;
+    bottom: 35px;
   }
-
-  @media(max-height: 800px) {
-    width: 25px;
-    height: 100px;
-    right: 20px;
-    bottom: 20px;
-  }
-  
   
   &:focus {
     outline: none;
